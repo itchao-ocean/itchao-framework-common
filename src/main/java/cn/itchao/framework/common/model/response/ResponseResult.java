@@ -16,6 +16,7 @@
 package cn.itchao.framework.common.model.response;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
@@ -25,6 +26,7 @@ import lombok.ToString;
  */
 @Data
 @ToString
+@NoArgsConstructor
 public class ResponseResult implements Response {
 
     /**

@@ -15,11 +15,14 @@
  */
 package cn.itchao.framework.common.model.response;
 
+import lombok.ToString;
+
 /**
  * @author jinchao
  * @description TODO
  * @date 2019/12/11 15:53
  */
+@ToString
 public enum  CommonCode implements ResultCode {
     SUCCESS(true,10000,"操作成功！"),
     UNAUTHENTICATED(false,10001,"此操作需要登陆系统！"),
