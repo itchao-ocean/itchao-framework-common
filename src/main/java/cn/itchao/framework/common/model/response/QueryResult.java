@@ -15,6 +15,9 @@
  */
 package cn.itchao.framework.common.model.response;
 
+import lombok.Data;
+import lombok.ToString;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -23,6 +26,8 @@ import java.util.List;
  * @description 分页列表参数
  * @date 2019/12/11 15:56
  */
+@Data
+@ToString
 public class QueryResult<T> implements Serializable {
 
     /**
@@ -33,20 +38,4 @@ public class QueryResult<T> implements Serializable {
      * 数据总数
      */
     private long total;
-
-    public List<T> getList() {
-        return list;
-    }
-
-    public void setList(List<T> list) {
-        this.list = list;
-    }
-
-    public long getTotal() {
-        return total;
-    }
-
-    public void setTotal(long total) {
-        this.total = total;
-    }
 }

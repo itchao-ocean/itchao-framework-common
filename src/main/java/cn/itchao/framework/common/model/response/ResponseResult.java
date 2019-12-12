@@ -15,11 +15,16 @@
  */
 package cn.itchao.framework.common.model.response;
 
+import lombok.Data;
+import lombok.ToString;
+
 /**
  * @author jinchao
  * @description
  * @date 2019/12/11 15:55
  */
+@Data
+@ToString
 public class ResponseResult implements Response {
 
     /**

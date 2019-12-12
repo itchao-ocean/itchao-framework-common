@@ -15,25 +15,22 @@
  */
 package cn.itchao.framework.common.model.response;
 
+import lombok.Data;
+import lombok.ToString;
+
 /**
  * @author jinchao
  * @description 分页查询结果使用该类返回给前端
  * @date 2019/12/11 16:04
  */
+@Data
+@ToString
 public class QueryResponseResult extends ResponseResult {
 
     QueryResult queryResult;
 
     public QueryResponseResult(ResultCode resultCode,QueryResult queryResult){
         super(resultCode);
-        this.queryResult = queryResult;
-    }
-
-    public QueryResult getQueryResult() {
-        return queryResult;
-    }
-
-    public void setQueryResult(QueryResult queryResult) {
         this.queryResult = queryResult;
     }
 }
