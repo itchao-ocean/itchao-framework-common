@@ -15,7 +15,9 @@
  */
 package cn.itchao.framework.common.model.response;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.io.Serializable;
@@ -28,6 +30,8 @@ import java.util.List;
  */
 @Data
 @ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class QueryResult<T> implements Serializable {
 
     /**
